@@ -1,4 +1,6 @@
 package kun.hee.fragment_more.fragments
 
-class MainFragment {
+import androidx.fragment.app.Fragment
+
+class MainFragment :Fragment() {
 }
