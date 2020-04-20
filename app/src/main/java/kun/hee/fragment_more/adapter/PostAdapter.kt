@@ -10,6 +10,7 @@ import android.widget.TextView
 import kun.hee.fragment_more.R
 import kun.hee.fragment_more.datas.Post
 import kun.hee.listviewpractice.datas.AppInformation
+import org.w3c.dom.Text
 
 class PostAdapter(context:Context, resId:Int, list:ArrayList<Post> ):ArrayAdapter<Post>(context, resId, list) {
     val mContext = context
@@ -30,7 +31,15 @@ class PostAdapter(context:Context, resId:Int, list:ArrayList<Post> ):ArrayAdapte
         val row = tempRow!!
 //      ★ 요기 위에 하나도 모르겠음 ★
 
+        val companyNameTxt = row.findViewById<TextView>(R.id.companyNameTxt)
+        val amounTxt = row.findViewById<TextView>(R.id.amountTxt)
+        val userNameTxt = row.findViewById<TextView>(R.id.userNameTxt)
 
+        val postData = mList.get(position)
+
+        companyNameTxt.text = postData.companyName
+        userNameTxt.text = postData.userName
+        amounTxt.text = String.format("%,d 주",postData.amount)
 
         return row
 
