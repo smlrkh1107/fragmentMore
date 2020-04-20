@@ -9,7 +9,7 @@ import kun.hee.fragment_more.fragments.MainFragment
 class MyFragPagerAdapter(fm:FragmentManager) :FragmentPagerAdapter(fm){
     override fun getItem(position: Int): Fragment {
 //       getView 각각의 줄에 없던걸 뿌려줄꺼야. ListView의 getView와비슷
-        if (position==0){
+        if (position == 0){
             return MainFragment() //1
         }
         else {
