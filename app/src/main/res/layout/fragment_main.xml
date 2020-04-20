@@ -4,9 +4,21 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
     <EditText
+        android:id="@+id/messageEdt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:singleLine="true"
         android:hint="메세지 입력"/>
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="확인"/>
+    <TextView
+        android:id="@+id/contentTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="입력내용을 표시합니다."/>
 
 </LinearLayout>
