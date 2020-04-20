@@ -30,7 +30,7 @@ class PostAdapter(context:Context, resId:Int, list:ArrayList<Post> ):ArrayAdapte
         val row = tempRow!!
 //      ★ 요기 위에 하나도 모르겠음 ★
 
-        val
+
 
         return row
 
