@@ -11,7 +11,7 @@ import kun.hee.listviewpractice.datas.AppInformation
 
 class GameListFragment : Fragment(){
 
-    var mGameAdapter:AppInfo_Adpater = null
+    var mGameAdapter:AppInfo_Adpater? = null
     val mGameList = ArrayList<AppInformation>()
 
 
