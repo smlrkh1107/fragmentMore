@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_game_list.*
 import kun.hee.fragment_more.R
 import kun.hee.listviewpractice.adapter.AppInfo_Adpater
 import kun.hee.listviewpractice.datas.AppInformation
@@ -39,6 +40,7 @@ class GameListFragment : Fragment(){
 
 //        this쓰면  오류나서 !!로 강제해야하나벼
         mGameAdapter = AppInfo_Adpater(context!!, R.layout.play_store_list, mGameList)
+        gameListView.adapter = mGameAdapter
 
     }
 
